@@ -1,0 +1,428 @@
+*{
+    /*selector universal*/
+    margin: 0;
+}
+body{
+    /*cuerpo*/
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #F3F5FC;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Inter Tight', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+header{
+    /*encabezado*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: auto;
+    padding: 10px 10px;
+    float: left;
+    padding: 5px 100px;
+    height: 130px;
+}
+
+.logoInicial{
+    /*logo inicial*/
+    height: 100px;  
+}
+
+.non img{
+    /*img del div der*/
+    width: 336px;
+    height: 304px;
+    overflow: hidden;
+}
+
+.main{
+    /*contenido principal*/
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.section{
+    /*textarea1 de lado izq*/
+    width: 99%;
+    height: 350px;
+    background-color: #F3F5FC;
+    border: none;
+    resize: none;
+    padding: 20px;
+    font-size: 29px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 48px;
+    color: #0A3871;  
+}
+
+.section::placeholder{
+    /*guia visual color azul*/
+    color: #0A3871;
+}
+
+.aside{
+    /*textarea2 de lado der*/
+    width: 95%;
+    height: 210px;
+    background-color: rgba(255, 255, 255, 0.5); /* Color blanco con 50% de transparencia */
+    border: none;
+    resize: none; 
+    font-size: 22px;
+    text-align: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+    box-sizing: border-box;
+}
+
+.sec{
+    /*div de lado izq*/
+    border-radius: 16px;
+    margin: 90px;
+    padding: 0px 10px;
+    width: 48%;
+    height: 340px;
+    display: inline-block;
+}
+
+.asi{
+    /*div de lado der*/
+    border-radius: 16px;
+    padding: 8px;
+    width: 27%;
+    height: 699px;
+    margin-bottom: -90px;
+    background-color: #fdfeff;
+    top: -90px;
+    display: inline-block;
+}
+
+.msj{
+    /*texto en especifico que iundica no usar mayus ni acentos*/
+    display: flex;
+    font-size: 12px;
+    color: #495057;
+    align-items: center;
+    padding: 0px 30px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+.non{
+    /*div que contiene los p y la img*/
+    display: inline-block;
+    
+}
+
+.non LogoMueco{
+    /*img*/
+    display: flex;
+}
+
+.non #p-1{
+    /*parrafo principal*/
+    padding: 0;
+    display: grid;
+    border: 0;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    font-weight: 700;
+    line-height: 28.8px;
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+}
+
+.non #p-2{
+    /*parrafo secundario*/
+    padding: 10px;
+    text-align: center;
+    border: 5px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #495057;
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+}
+
+
+.container__boton {
+    /*contiene los botones de encrip/desencrip*/
+    border-radius: 24px;
+    background: #0A3871;
+    color: white;
+    padding: 0px;
+    font-weight: lighter;
+    display: inline-block;
+    margin-top: 10px;
+    height: 70px;
+    width: 300px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.container__boton:disabled {
+    /*boton deshabilitado*/
+    background: #D8DFE8;
+    color: #0A3871;
+}
+
+.container__botonC {
+    /*boton de copiar*/
+    border-radius: 24px;
+    background: #ffffff;
+    color: #0A3871;
+    padding: 10px;
+    font-weight: lighter;
+    margin: 0;
+    width: fit-content;
+    margin-top: 18px;
+    height: 60px;
+    width: 360px;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    border: 1px;
+    cursor: pointer;
+    display: block;
+}
+.container__botonC:hover {
+    /*cambiar el color cuando el mouse se posiciona en el boton*/
+    background-color:#0A3871;
+    color: white;
+}
+
+.container__botonC:disabled {
+    /*boton copiar deshabilitado*/
+    background: #ffffff;
+    color: #0A3871;
+}
+
+#mensajeTemporal {
+    /*indica que copiaste los datos*/
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background: #D8DFE8;
+    color: #0A3871;
+    border-radius: 7px;
+    display: none;
+    text-align: center;
+}
+
+
+.rodapie{
+    /*info del desarrollador*/
+    width: 100%;
+    position: relative;
+    margin: 5px auto;
+    padding: 1px;
+    text-align: center;
+    color:#0A3871;
+    font-size: 1.2em;
+    font-weight: lighter;
+    font-size: 14px;
+    display: block;
+    text-decoration:dashed;
+    background: linear-gradient( #D8DFE8, #ffffff);
+}
+
+@media screen and (max-width: 768px) {
+    /* adaptamos medidas para una interfaz mas pequeña*/
+    body {
+        font-size: 14px;
+        max-width: 100vh;
+        display: inline;
+        padding: 0%;
+    }
+
+    .section, .msj{
+        font-size: 14px;
+    }
+
+    .main {
+        flex-direction: column;
+        max-width: 420px;
+        padding: 0%;
+    }
+   
+    .aside {
+        width: 100%;
+        max-height: auto;
+        font-size: 14px;
+    }
+
+    .sec,
+     .msj, .container__botonC, .container__boton {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .container__boton, .container__botonC, .non{
+        display: block;
+        z-index: 1;
+        max-width: 100%;
+    }
+
+    .container__boton:hover, .container__botonC:hover {
+        background-color:#0A3871;
+        color: white; 
+    }
+
+   .container__botonC{
+    position: relative;
+    }
+
+    .non img{
+        display: none;
+    }
+
+    .asi, .sec{
+        height: auto;
+        width: auto;
+        z-index: 1;
+    }
+
+    .aside, .section{
+        width: 100%;
+        min-height: 50px;
+        padding: 10px;
+        box-sizing: border-box;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .rodapie{
+        width: 340px;
+        position: relative;
+        margin: 5px auto;
+        padding: 39px;
+        text-align: center;
+        color: #0A3871;
+        font-size: 1.2em;
+        font-weight: lighter;
+        text-decoration: dashed;
+        background: linear-gradient(#D8DFE8, #ffffff);
+        height: auto;
+        display: block;
+    }
+}
+
+@media  screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+    /*adaptamos medidas especificamente para un dipositivo tipo ipad/tablet*/
+    .main{
+        max-width: 100%;
+        flex-direction: column;
+        max-height: 870px;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+      .asi, .sec, .container__botonC, .container__boton {
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+      .aside, .section, .msj, .non{
+        font-size: 16px;
+    }
+      
+       .non img {
+        display: none;
+    }
+
+      .aside {
+        width: 100%;
+        max-height: auto;
+        
+    }
+
+    .sec,
+     .msj, .container__botonC, .container__boton {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+
+    .container__boton, .container__botonC, .non{
+        display: block;
+        z-index: 1;
+        max-width: 100%;
+    }
+
+    .container__boton:hover, .container__botonC:hover {
+        background-color:#0A3871;
+        color: white; 
+    }
+
+    .non #p-1, .non#p-2{
+        display: block; /* Asegura que los párrafos estén en bloques separados */    
+    }
+
+   .container__botonC{
+    position: relative;
+    }
+
+    .non img{
+        display: none;
+    }
+
+    .asi, .sec{
+        height: auto;
+        width: auto;
+        z-index: 1;
+    }
+
+    .aside, .section{
+        width: 100%;
+        min-height: 50px;
+        padding: 10px;
+        box-sizing: border-box;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .rodapie{
+        width: 900px;
+        
+        margin: 192px auto;
+        padding: 29px;
+        text-align: center;
+        color: #0A3871;
+        font-size: 1.2em;
+        font-weight: lighter;
+        text-decoration: dashed;
+        background: linear-gradient(#D8DFE8, #ffffff);
+        height: auto;
+    }
+      
+
+    
+}
+

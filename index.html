@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="shortcut icon" href="img/logoOf.png" type="image/x-icon">
+            <title>Encriptador</title>
+            <link rel="stylesheet" href="reset.css">
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Inter+Tight:wght@200&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        </head>
+    <body>
+        <header>
+            <img src="img/logoOf.png" alt="logo de la pagina" class="logoInicial">
+        </header>
+
+        <main class="main">
+            <div class="sec">
+                    <label for="mensaje"></label>
+                <textarea id="mensajeAreaUno" required placeholder="Ingrese el texto aqui" class="section"></textarea>
+                
+                <label for="mensaje" class="msj"><span class="material-symbols-outlined">
+                    error
+                    </span>
+                    Solo letras minúsculas y sin acentos</label>
+                <div class="botones"> 
+                <button id="enc" onclick="encriptar();"class="container__boton">Encriptar</button>
+                <button  id="des" onclick="desencriptar();"class="container__boton"  disabled>Desencriptar</button>
+                </div>
+            </div>
+            <div class="asi">   
+                    <label for="mensaje"></label>
+                    <textarea  readonly id="mensajeAreaDos" required class="aside" ></textarea> 
+                    <div class="non">
+                    <img src="img/Muñeco.png" class="logoMueco">
+                    <p id="p-1">Ningún mensaje fue encontrado</p>
+                    <p id="p-2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                    <button onclick="copiar();" class="container__botonC" id="copiar">Copiar</button>
+                    <div id="mensajeTemporal">Texto copiado al portapapeles. Despues de esto no presione ningun boton hasta haberlo pegado para desencriptarlo o encriptarlo.</div>
+                    
+            </div>
+        </main>
+        <script src="app.js">
+               
+        </script>
+    
+    </body>
+    <footer class="rodapie">
+            <h3>Contacto</h3>
+            <p>Email: ev765030@gmail.com</p>
+            <p>&copy Copyright Eduardo Vera   2024</p>
+    </footer>
+</html>
